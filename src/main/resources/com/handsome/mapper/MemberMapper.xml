@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.handsome.mapper.MemberMapper">
+
+
+  <resultMap type="com.handsome.domain.MemberVO" id="memberMap">
+    <id property="mid" column="mid"/>
+    <result property="mid" column="mid"/>
+    <result property="mPassword" column="mpassword"/>
+    <result property="mName" column="mname"/>
+    <result property="mEmail" column="memail"/>
+    <result property="mTel" column="mtel"/>
+    <result property="mZipcode" column="mzipcode"/>
+    <result property="mAddress1" column="maddress1"/>
+    <result property="mAddress2" column="maddress2"/>
+    <result property="mGrade" column="mgrade"/>
+    <result property="mDate" column="mdate"/>
+    <result property="mPoint" column="mpoint"/>
+    <result property="mEnabled" column="menabled"/>
+    <collection property="authList" resultMap="authMap">
+    </collection> 
+  </resultMap>
+  
+  <resultMap type="com.handsome.domain.AuthVO" id="authMap">
+    <result property="mid" column="mid"/>
+    <result property="authority" column="authority"/>
+  </resultMap>
+
+  <!-- select 관련 기본 로그인 정보  -->  
+  <select id="getMember" resultMap="memberMap">
+	SELECT *
+	FROM tbl_member m 
+	LEFT OUTER JOIN tbl_authorities auth
+	on m.mid = auth.mid
+	WHERE m.mid = #{mid}
+  </select>
+  
+  <insert id="insertMember" parameterType="map">
+  	INSERT into tbl_member(mid, mpassword, mname, memail, mtel, mzipcode, maddress1, maddress2, mPoint, mDate)
+  	 VALUES (#{mid},
+	 		 #{mPassword},
+	 		 #{mName},
+	 		 #{mEmail},
+	 		 #{mTel},
+	 		 #{mZipcode},
+	 		 #{mAddress1},
+	 		 #{mAddress2},
+	 		 #{mPoint},
+	 		 #{mDate}
+	 		)
+  </insert>
+
+  <insert id="insertMemberAuth" parameterType="map">
+	INSERT into tbl_authorities (mid, authority) values (#{mid}, #{authority})
+  </insert>
+
+  <update id="editMemberByPwd" parameterType="map">
+  	UPDATE tbl_member
+  	SET
+  		 mpassword = #{mPassword},
+  		 mname = #{mName},
+  		 memail = #{mEmail},
+  		 mtel = #{mTel},
+  		 mzipcode = #{mZipcode},
+  		 maddress1 = #{mAddress1},
+  		 maddress2 = #{mAddress2}
+ 	WHERE mid = #{findMid}  		 
+  </update>
+
+  <update id="editMemberByNoPwd" parameterType="map">
+  	UPDATE tbl_member
+  	SET
+  		 mname = #{mName},
+  		 memail = #{mEmail},
+  		 mtel = #{mTel},
+  		 mzipcode = #{mZipcode},
+  		 maddress1 = #{mAddress1},
+  		 maddress2 = #{mAddress2}
+ 	WHERE mid = #{findMid}  		 
+  </update>
+
+  <update id="deleteMember" parameterType="map">
+  	UPDATE tbl_member
+  	SET 
+  		menabled = '0'
+	WHERE mid = #{mid}
+  </update>
+
+</mapper>

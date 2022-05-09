@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xmlns:security="http://www.springframework.org/schema/security"
+xsi:schemaLocation="http://www.springframework.org/schema/security http://www.springframework.org/schema/security/spring-security.xsd
+http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+<bean id="customAccessDenied" class="com.handsome.security.CustomAccessDeniedHandler"></bean>
+
+<bean id="customLoginSuccess" class="com.handsome.security.CustomLoginSuccessHandler"></bean>		
+ 
+<bean id="bcryptPasswordEncoder"
+class="org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder" />
+
+<bean id="customUserDetailsService" class="com.handsome.security.CustomUserDetailsService">
+</bean>
+
+		
+<security:http>
+ 	<security:intercept-url pattern="/sample/all" 	access="permitAll" />
+	<security:intercept-url	pattern="/sample/member" access="hasRole('ROLE_MEMBER')" />
+	<security:intercept-url pattern="/sample/admin" access="hasRole('ROLE_ADMIN')" />
+	<security:intercept-url pattern="/includes/mainHeader" access="permitAll" />
+	<security:intercept-url pattern="/includes/loginHeader" access="permitAll" />	
+	<security:intercept-url pattern="/mainPage" access="permitAll" />
+	<security:logout logout-url="/customLogout" invalidate-session="true" />
+			
+<!--
+  	<security:form-login login-page="/login" authentication-success-handler-ref="customLoginSuccess" />	
+
+	<security:access-denied-handler ref="customAccessDenied" />
+ -->
+ 	<security:form-login login-page="/handsomeLogin" authentication-success-handler-ref="customLoginSuccess"/>	
+
+ 
+ </security:http>
+
+<security:authentication-manager>
+	<security:authentication-provider user-service-ref="customUserDetailsService" >
+	<security:password-encoder 	ref="bcryptPasswordEncoder" />
+	
+	</security:authentication-provider>
+</security:authentication-manager>
+		
+
+</beans>

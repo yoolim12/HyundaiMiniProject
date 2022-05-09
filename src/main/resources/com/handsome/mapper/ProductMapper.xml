@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.handsome.mapper.ProductMapper">
+ 
+<select id="selectProduct" resultType="com.handsome.domain.ProductVO" parameterType="String">
+	SELECT *
+	FROM tbl_product
+	WHERE pid = #{pid}
+</select>
+
+<select id="selectProductList" resultType="com.handsome.domain.ProductVO">
+	<![CDATA[
+		SELECT i.pid, image_url, pname, pprice, bname, clarge, cmedium, csmall
+		FROM tbl_product p, tbl_thumb_image i
+		WHERE pno > 0 AND i.pid = p.pid
+	]]>
+</select>
+
+<select id="selectProductListWithPaging" resultType="com.handsome.domain.ProductVO">
+	<![CDATA[
+		SELECT pid, image_url, pname, pprice, bname, clarge, cmedium, csmall
+		FROM (
+				SELECT /*+INDEX_DESC(tbl_product pk_product) */
+					ROWNUM rn, i.pid, image_url, pname, pprice, bname, clarge, cmedium, csmall
+				FROM tbl_product p, tbl_thumb_image i
+				WHERE ROWNUM <= #{pageNum} * #{amount} AND i.pid = p.pid
+		)
+		WHERE rn > (#{pageNum} - 1) * #{amount}
+	]]>
+</select>
+		
+<select id="countTotal" resultType="int">
+	SELECT COUNT(*)
+	FROM tbl_product
+	WHERE pno > 0
+</select> 
+ 
+<insert id="insertIntoCart">
+	INSERT INTO orderitem(pid, oamount, mid)
+	VALUES(#{pid}, #{oamount}, 'mid')
+</insert>
+
+<select id="selectCategoryMedium" resultType="com.handsome.domain.ProductVO">
+		<![CDATA[
+	
+		SELECT pid, image_url, pname, pprice, bname, clarge, cmedium, csmall
+		FROM (
+				SELECT /*+INDEX_DESC(tbl_product pk_product) */
+					ROWNUM rn, i.pid, image_url, pname, pprice, bname, clarge, cmedium, csmall
+				FROM tbl_product p, tbl_thumb_image i
+				WHERE ROWNUM <= #{cri.pageNum} * #{cri.amount} AND i.pid = p.pid AND cmedium=#{category}
+		)
+		WHERE rn > (#{cri.pageNum} - 1) * #{cri.amount}
+		
+	]]>
+</select>
+	
+<select id="selectCategorySmall" resultType="com.handsome.domain.ProductVO">
+		<![CDATA[
+	
+		SELECT pid, image_url, pname, pprice, bname, clarge, cmedium, csmall
+		FROM (
+				SELECT /*+INDEX_DESC(tbl_product pk_product) */
+					ROWNUM rn, i.pid, image_url, pname, pprice, bname, clarge, cmedium, csmall
+				FROM tbl_product p, tbl_thumb_image i
+				WHERE ROWNUM <= #{cri.pageNum} * #{cri.amount} AND i.pid = p.pid AND csmall=#{category}
+		)
+		WHERE rn > (#{cri.pageNum} - 1) * #{cri.amount}
+		
+	]]>
+</select>
+ 
+<select id="countMTotal" resultType="int">
+	SELECT COUNT(*)
+	FROM tbl_product
+	WHERE cmedium=#{category}
+</select> 
+
+<select id="countSTotal" resultType="int">
+	SELECT COUNT(*)
+	FROM tbl_product
+	WHERE csmall=#{category}
+</select>
+
+<select id="findCategoryMedium" resultType="String">
+	SELECT cmedium
+	FROM tbl_category
+	WHERE csmall=#{category}
+</select>
+</mapper> 

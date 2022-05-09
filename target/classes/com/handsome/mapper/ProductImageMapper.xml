@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.handsome.mapper.ProductImageMapper">
+
+<select id="selectThumbImages" resultType="com.handsome.domain.ProductImageVO" parameterType="String">
+	<![CDATA[
+		SELECT image_url
+		FROM tbl_thumb_image WHERE pid = #{pid}
+	]]>
+</select>
+
+<select id="selectSmallDetailImages" resultType="com.handsome.domain.ProductImageVO" parameterType="String">
+	<![CDATA[
+		SELECT image_url
+		FROM tbl_detail_image_small WHERE pid = #{pid}
+	]]>
+</select>
+
+<select id="selectBigDetailImages" resultType="com.handsome.domain.ProductImageVO" parameterType="String">
+	<![CDATA[
+		SELECT image_url
+		FROM tbl_detail_image_big WHERE pid = #{pid}
+	]]>
+</select>
+
+<select id="selectHugeDetailImage" resultType="com.handsome.domain.ProductImageVO" parameterType="String">
+	<![CDATA[
+		SELECT image_url
+		FROM tbl_detail_image_huge WHERE pid = #{pid}
+	]]>
+</select>
+
+</mapper> 

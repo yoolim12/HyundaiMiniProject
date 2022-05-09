@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.handsome.mapper.InquiryMapper">
+
+<select id="selectInquiryList" resultType="com.handsome.domain.InquiryVO" parameterType="String">
+	select * 
+	from tbl_qna
+	where mid = #{mid}
+	order by qdate desc
+</select>
+
+<delete id="deleteInquiry">
+	delete
+	from tbl_qna
+	where qid = #{qid}
+</delete>
+
+<insert id="addInquiry" parameterType="com.handsome.domain.InquiryVO">
+	insert into tbl_qna(qid, mid, qtitle, qcontent, qdate)
+	values(tbl_qna_seq.nextval, 'olzlrlo', #{qtitle}, #{qcontent}, SYSDATE)
+</insert>
+
+</mapper>

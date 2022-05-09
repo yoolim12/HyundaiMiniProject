@@ -1,0 +1,70 @@
+@charset "UTF-8";
+
+/* ������ �귣����� */
+.beauty-cont .br_main_visual {margin-bottom:0;padding:20px 0 76px;}
+.beauty-cont .br_main_visual #br_main_slide {margin:0;padding:0;}
+.beauty-cont .br_main_visual #br_main_slide .slides li {position:relative;}
+.beauty-cont .br_main_visual #br_main_slide .slides li a {display:block;}
+.beauty-cont .br_main_visual .flex-control-nav{display:block;bottom:16px;}
+.beauty-cont .br_main_visual .flex-control-nav li {}
+.beauty-cont .br_main_visual .flex-control-nav li a{width:2px; height:14px; margin:0 2.5px;background:rgba(255, 255, 255, 0.6); transition:.2s; border-radius:0;border:0; opacity: 1;}
+.beauty-cont .br_main_visual .flex-control-nav li a.flex-active{width:6px; background-color:rgba(255, 255, 255, 1);}
+.beauty-cont .br_main_visual .a_txt_wrap {position:absolute;left:10.8%;right:inherit;top:190px;text-align:center;min-width:30%;width:89.2%;text-align:left;}
+.beauty-cont .br_main_visual .a_txt_wrap .title{font-size:34px;font-family:Arial,'AppleSDGothicNeoEB',sans-serif;font-weight:bold;line-height:38px;letter-spacing:-1.5px;margin-bottom:19px;color:#fff;letter-spacing:-1px;}
+.beauty-cont .br_main_visual .a_txt_wrap .s_title{font-size:20px;font-family:'Apple SD Gothic Neo',sans-serif;padding:0;margin-top:0;letter-spacing:-1px;line-height:28px;color:#fff;letter-spacing:-1px;}
+.beauty-cont .br_main_visual .flex-direction-nav a{background: url("http://cdn.thehandsome.com/_ui/desktop/common/images/beauty/main_slide_btn.png") no-repeat;}
+.beauty-cont .br_main_visual .flex-direction-nav .flex-next {background-position:right top;}
+
+.beauty-cont .product_list .product_menu li a {font-size:22px;}
+.beauty-cont .product_list .product_menu {padding-bottom:40px;}
+.beauty-cont .product_list.list2 .slides li {margin:0 4px 0;}
+.beauty-cont .product_list.list2 .brp_cnt {max-width:907px;}
+.beauty-cont .product_list .controls .prev {left:20px;}
+.beauty-cont .product_list .controls .next {right:20px;}
+.beauty-cont .brdm_cnts .product_list {margin-bottom:100px;}
+
+.beauty-cont .br_main_video {width:1100px;height:619px;}
+
+/* ������ �������� */
+.btn_video_play {margin-left:26px;top:79px;}
+.item_detail_info .info .title {width:105px;}
+#popupOeraMileage{position:absolute;top:35px;left:inherit;right:-2px;width:451px;padding:30px 35px;border:1px solid #e3e3e3;z-index:8;font-size:13px;color:#363636;}
+#popupOeraMileage .pop_cnt {}
+#popupOeraMileage .pop_cnt h3 {font-size:18px;}
+#popupOeraMileage .pop_cnt .sub-desc {padding:10px 0 34px;}
+#popupOeraMileage .pop_cnt .oera-mileage-desc {padding:28px 0 0;}
+#popupOeraMileage .pop_cnt .oera-mileage-desc li {position:relative;display:flex;align-items:center;padding-bottom:50px;}
+#popupOeraMileage .pop_cnt .oera-mileage-desc li img {display:block;}
+#popupOeraMileage .pop_cnt .oera-mileage-desc li:after {content:"";display:block;position:absolute;top:106px;left:37px;width:15px;height:9px;background:url("http://cdn.thehandsome.com/_ui/desktop/common/images/beauty/bul_mileage_arr.gif") no-repeat 0 0;}
+#popupOeraMileage .pop_cnt .oera-mileage-desc li:last-child {padding-bottom:38px;}
+#popupOeraMileage .pop_cnt .oera-mileage-desc li:last-child:after {display:none;}
+#popupOeraMileage .pop_cnt .oera-mileage-desc li .icon {}
+#popupOeraMileage .pop_cnt .oera-mileage-desc li .desc {padding-left:36px;}
+#popupOeraMileage .pop_cnt .oera-mileage-desc li .desc dt {font-size:14px;font-weight:bold;color:#000;}
+#popupOeraMileage .pop_cnt .oera-mileage-desc li .desc dd .notice {color:#979797;}
+#popupOeraMileage .pop_cnt .btn-area {}
+#popupOeraMileage .pop_cnt .btn-area .btn {display:block;width:204px;height:40px;line-height:38px;margin:0 auto;background:#222;color:#fff;font-size:14px;}
+
+.product-detail-img {margin:60px 0 0;text-align:center;}
+.product-detail-img img {display:block;}
+.tbl-beauty-detail {width:100%;margin-top:5px;border-top:1px solid #383838;}
+.tbl-beauty-detail .tbl th, .tbl-beauty-detail .tbl td {height:20px;padding:10px 15px;border-bottom:1px solid #ebebeb;vertical-align:middle;text-align:left;}
+.tbl-beauty-detail .tbl th {background:#f5f5f5;border-right:1px solid #ebebeb;color:#000;font-weight:normal;}
+.tbl-beauty-detail .tbl td {color:#676767;}
+.tbl-beauty-detail .disc {padding-top:10px;color:#979797;font-size:11px;}
+.tbl-beauty-detail .tbl .ingredient .more-btn {cursor:pointer; border:0; border-radius:0; background-color:transparent; outline:0;}
+.tbl-beauty-detail .tbl .ingredient .more-btn i {transition:.4s; display: inline-block; width:9px; height:5px; background:url("http://cdn.thehandsome.com/_ui/desktop/common/images/beauty/bg_more_arr.gif") no-repeat 0 0; vertical-align:middle; margin-top:-4px; margin-left:4px;transform: rotate(0deg);}}
+.tbl-beauty-detail .tbl .ingredient .more-btn.on {}
+.tbl-beauty-detail .tbl .ingredient .more-btn.on i {transform: rotate(180deg);}
+.tbl-beauty-detail .tbl .ingredient .con-box {display:none;}
+
+/* 211101 체험단 리뷰 추가 S */
+.pop-tester-review {}
+.pop-tester-review .pop_tltwrap2 p{padding-top:5px;color:#999;}
+.pop-tester-review .pop_cnt {margin-top:17px;border-top:1px solid #ebebeb;}
+.pop-tester-review {}
+.pop-tester-review .evaluation_list1807 .evaluation_view {margin-bottom:0;}
+.pop-tester-review .evaluation_list1807 .evaluation_view .member_info_bottom {margin:0;padding:20px 18px 5px;}
+.pop-tester-review .evaluation_list1807.options .member_info_bottom ul {height:auto;}
+.pop-tester-review .evaluation_list1807.options .member_info_bottom ul .choice {position:inherit;}
+/* 211101 체험단 리뷰 추가 E */

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+ 
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+ 
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+ 
+<mapper namespace="com.handsome.mapper.testMapper">
+    <select id="test" resultType="com.handsome.domain.TestBean" parameterType="java.lang.String">
+        select o.mid, o.pid, p.pname, o.oamount, p.pprice*o.oamount as pprice, i.image_url, p.bname
+        from tbl_product p, orderitem o, tbl_thumb_image i
+        where o.pid = p.pid and i.pid = o.pid and o.mid = #{mid}
+    </select>
+    
+    <delete id="delete" parameterType="java.lang.String">
+    	delete from orderitem where pid = #{param1} and mid = #{param2}  
+    </delete>
+    
+    <select id="totalCount" resultType="com.handsome.domain.TestBean" parameterType="java.lang.String">
+    	select count(*) as cnt
+    	from tbl_product p, orderitem o
+    	where o.pid = p.pid and o.mid = #{mid}
+    </select>
+    
+    <select id="totalPrice" resultType="com.handsome.domain.TestBean" parameterType="java.lang.String">
+    	select sum(p.pprice*o.oamount) as total
+    	from tbl_product p, orderitem o
+    	where p.pprice in (
+    			select p.pprice
+    			from tbl_product p, orderitem o
+    			where p.pid = o.pid)
+    		and p.pid = o.pid
+    		and o.mid = #{mid}
+    </select>
+</mapper>
