@@ -37,44 +37,5 @@ public class HomeController {
 	public String mypage() {
 		return "myPage/main";
 	}
-	
-	@Autowired
-	InquiryService inquiryService;
-	
-	@RequestMapping("/myPage/myInquiry")
-	public String myInquiry(Model model) {
-		
-		log.info("RequestMapping: /myInquiry.....");
-		List<InquiryVO> inquiry_list = inquiryService.getInquiryList("olzlrlo");
-		
-		model.addAttribute("inquiry_list", inquiry_list);
-		//return "product/productList";
-		
-		
-		return "myPage/myInquiry";
-	}
-	
-	@GetMapping("/myPage/writeInquiry")
-	public void writeInquiry() {}
-	
-	@PostMapping("/myPage/writeInquiry")
-	public String writeInquiry(InquiryVO inquiry) {
-		
-		log.info("PostMapping: /writeInquiry.....");
-		log.info(inquiry.getQcontent());
-		log.info(inquiry.getQtitle());
-		System.out.println("제목: "+inquiry.getQcontent());
-		System.out.println("내용: " + inquiry.getQtitle());
-		inquiryService.addInquiry(inquiry);
-		return "redirect:/myPage/myInquiry";
-	}
-	
-	@GetMapping("/myPage/removeInquiry")
-	public String remove(@RequestParam("qid") int qid) {
-		
-		log.info("GetMapping: /removeInquiry.....");
-		inquiryService.deleteInquiry(qid);
-		
-		return "redirect:/myPage/myInquiry";
-	}
+
 }	

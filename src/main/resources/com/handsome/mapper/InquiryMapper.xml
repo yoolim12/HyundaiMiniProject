@@ -4,6 +4,7 @@
   "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.handsome.mapper.InquiryMapper">
 
+<!-- 이지은 작성  -->
 <select id="selectInquiryList" resultType="com.handsome.domain.InquiryVO" parameterType="String">
 	select * 
 	from tbl_qna
@@ -11,12 +12,14 @@
 	order by qdate desc
 </select>
 
+<!-- 이지은 작성  -->
 <delete id="deleteInquiry">
 	delete
 	from tbl_qna
 	where qid = #{qid}
 </delete>
 
+<!-- 이지은 작성  -->
 <insert id="addInquiry" parameterType="com.handsome.domain.InquiryVO">
 	insert into tbl_qna(qid, mid, qtitle, qcontent, qdate)
 	values(tbl_qna_seq.nextval, 'olzlrlo', #{qtitle}, #{qcontent}, SYSDATE)
