@@ -4,7 +4,7 @@
   "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.handsome.mapper.MemberMapper">
 
-
+<!-- 유지훈 작성  -->
   <resultMap type="com.handsome.domain.MemberVO" id="memberMap">
     <id property="mid" column="mid"/>
     <result property="mid" column="mid"/>
@@ -23,12 +23,13 @@
     </collection> 
   </resultMap>
   
+<!-- 유지훈 작성  -->
   <resultMap type="com.handsome.domain.AuthVO" id="authMap">
     <result property="mid" column="mid"/>
     <result property="authority" column="authority"/>
   </resultMap>
 
-  <!-- select 관련 기본 로그인 정보  -->  
+<!-- 유지훈 작성  -->
   <select id="getMember" resultMap="memberMap">
 	SELECT *
 	FROM tbl_member m 
@@ -37,6 +38,7 @@
 	WHERE m.mid = #{mid}
   </select>
   
+<!-- 유지훈 작성  -->
   <insert id="insertMember" parameterType="map">
   	INSERT into tbl_member(mid, mpassword, mname, memail, mtel, mzipcode, maddress1, maddress2, mPoint, mDate)
   	 VALUES (#{mid},
@@ -52,10 +54,12 @@
 	 		)
   </insert>
 
+<!-- 유지훈 작성  -->
   <insert id="insertMemberAuth" parameterType="map">
 	INSERT into tbl_authorities (mid, authority) values (#{mid}, #{authority})
   </insert>
 
+<!-- 유지훈 작성  -->
   <update id="editMemberByPwd" parameterType="map">
   	UPDATE tbl_member
   	SET
@@ -69,6 +73,7 @@
  	WHERE mid = #{findMid}  		 
   </update>
 
+<!-- 유지훈 작성  -->
   <update id="editMemberByNoPwd" parameterType="map">
   	UPDATE tbl_member
   	SET
@@ -81,6 +86,7 @@
  	WHERE mid = #{findMid}  		 
   </update>
 
+<!-- 유지훈 작성  -->
   <update id="deleteMember" parameterType="map">
   	UPDATE tbl_member
   	SET 

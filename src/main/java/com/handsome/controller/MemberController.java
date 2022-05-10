@@ -14,12 +14,23 @@ import com.handsome.service.MemberService;
 
 import lombok.extern.slf4j.Slf4j;
 
+
+/*  유지훈 작성
+ *  더한섬닷컴의 회원 관련 기능을 수행하는 Controller
+ *  
+ *  1. /handsomeLogin			: 회원 로그인 페이지  		- 유지훈 
+ *  2. /myPage/main				: 마이페이지 메인 페이지		- 유지훈 
+ *  3. /myPage/editInfo			: 마이페이지 수정 페이지		- 유지훈 
+ *  4. /member/join 			: 회원 로그인 페이지			- 유지훈
+ *  5. /member/joinForm 		: 회원 수정 페이지 			- 유지훈 
+ *  6. /member/edit				: 회원 수정 기능 			- 유지훈 
+ */
 @Slf4j
 @Controller
 public class MemberController {
 	
 	@Autowired
-	MemberService memberService;
+	MemberService memberService;  
 
 	@GetMapping("/handsomeLogin")
 	public void login(String error, String logout, Model model) {
@@ -28,11 +39,11 @@ public class MemberController {
 		
 		if(error != null) {
 			model.addAttribute("error", "Login Error check your Account");
-		}//end if
+		}
 		
 		if(logout != null) {
 			model.addAttribute("logout", "LoginOut!! ");
-		}//end if		
+		}
 	}
 	
 	@GetMapping("/myPage/main")
@@ -46,7 +57,6 @@ public class MemberController {
 	
 	@GetMapping("/myPage/editInfo")
 	public void getMyPageEdit(Principal principal, Model model) {
-		// edit 페이지 로출 시 권한 검사 후 user Id 값에 대한 정보 뿌려주기 
 		
 		log.info("유저 정보 조회");
 		String mid = principal.getName();
@@ -61,7 +71,6 @@ public class MemberController {
 		
 	}
 	
-	//회원가입 후 로그인 페이지로 이동 
 	@PostMapping("/member/join")
 	public String join(MemberVO memberVO) {		
 		memberService.saveMember(memberVO);
