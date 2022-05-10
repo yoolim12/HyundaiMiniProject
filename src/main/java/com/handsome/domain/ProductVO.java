@@ -3,7 +3,7 @@ package com.handsome.domain;
 import lombok.Data;
 
 /*  이지은 작성
- *  상품 컬러 관련 데이터
+ *  상품 관련 데이터
  */
 
 @Data
