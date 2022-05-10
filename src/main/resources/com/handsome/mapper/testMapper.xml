@@ -1,27 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper
- 
   PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
- 
   "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
- 
+
+<!-- 작성자 : 최유림 -->
+<!-- com.handsome.mapper 패키지 내의 testMapper 인터페이스를 구현한 것 -->
 <mapper namespace="com.handsome.mapper.testMapper">
+
+	<!-- testMapper 인터페이스 내에서 구현하고자 하는 메서드명을 id에 넘겨준다.
+	이 경우 쇼핑백 목록 출력해주는 메서드인 test 메서드를 구현한 것이다.
+	파라미터로 사용자 id를 받아온 뒤 
+	DB에 저장된 TBL_PRODUCT, ORDERITEM, TBL_THUMB_IMAGE 테이블에서 
+	회원 id, 상품 id, 상품명, 주문 수량, 주문 가격(단가*수량), 이미지 url, 브랜드명을 가져온다. -->
     <select id="test" resultType="com.handsome.domain.TestBean" parameterType="java.lang.String">
         select o.mid, o.pid, p.pname, o.oamount, p.pprice*o.oamount as pprice, i.image_url, p.bname
         from tbl_product p, orderitem o, tbl_thumb_image i
         where o.pid = p.pid and i.pid = o.pid and o.mid = #{mid}
     </select>
     
+    <!-- testMapper 인터페이스 내에서 구현하고자 하는 메서드명을 id에 넘겨준다.
+	이 경우 쇼핑백 목록 출력해주는 메서드인 delete 메서드를 구현한 것이다.
+	파라미터로 사용자 id와 상품 id를 받아온 뒤 
+	DB에 저장된 ORDERITEM 테이블에서 해당 사용자가 선택한 해당 상품의 id와 동일하면 삭제 작업을 실행한다. -->
     <delete id="delete" parameterType="java.lang.String">
     	delete from orderitem where pid = #{param1} and mid = #{param2}  
     </delete>
     
+    <!-- testMapper 인터페이스 내에서 구현하고자 하는 메서드명을 id에 넘겨준다.
+	이 경우 쇼핑백 목록 출력해주는 메서드인 totalCount 메서드를 구현한 것이다.
+	파라미터로 사용자 id를 받아온 뒤 
+	DB에 저장된 TBL_PRODUCT, ORDERITEM 테이블에서 해당 사용자의 쇼핑백에 담긴 상품 종류의 총 개수를 불러온다. -->
     <select id="totalCount" resultType="com.handsome.domain.TestBean" parameterType="java.lang.String">
     	select count(*) as cnt
     	from tbl_product p, orderitem o
     	where o.pid = p.pid and o.mid = #{mid}
     </select>
     
+    <!-- testMapper 인터페이스 내에서 구현하고자 하는 메서드명을 id에 넘겨준다.
+	이 경우 쇼핑백에 담긴 상품들의 전체 가격을 출력해주는 메서드인 totalPrice 메서드를 구현한 것이다.
+	파라미터로 사용자 id를 받아온 뒤 
+	DB에 저장된 TBL_PRODUCT, ORDERITEM 테이블에서 해당 사용자의 쇼핑백에 담긴 상품들의 전체 가격을 불러온다. -->
     <select id="totalPrice" resultType="com.handsome.domain.TestBean" parameterType="java.lang.String">
     	select sum(p.pprice*o.oamount) as total
     	from tbl_product p, orderitem o

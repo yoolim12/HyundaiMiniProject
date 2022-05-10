@@ -2,12 +2,23 @@
 <!DOCTYPE mapper
   PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
   "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!-- 작성자 : 최유림 -->
+<!-- com.handsome.mapper 패키지 내의 BoardMapper 인터페이스를 구현한 것 -->
 <mapper namespace="com.handsome.mapper.BoardMapper">   
 
+	<!-- BoardMapper 인터페이스 내에서 구현하고자 하는 메서드명을 id에 넘겨준다.
+	이 경우 상품 Q&A 게시물 조회 메서드인 select 메서드를 구현한 것이다.
+	파라미터로 상품 id를 받아온 뒤
+	DB에 저장된 TBL_REVIEW 테이블에서 해당 상품에 대한 게시물 넘버, 제목, 내용, 작성자명, 게시글 작성 날짜를 가져온다. -->
     <select id="select" resultType="com.handsome.domain.BoardBean">
     	select rno, rtitle, rcontent, mname, rdate from tbl_review where pid=#{pid}
     </select>
     
+    <!-- BoardMapper 인터페이스 내에서 구현하고자 하는 메서드명을 id에 넘겨준다.
+	이 경우 상품 Q&A 게시판 내에 있는 작성글 개수를 출력하는 메서드인 totalCount 메서드를 구현한 것이다.
+	파라미터로 상품 id를 받아온 뒤
+	DB에 저장된 TBL_REVIEW 테이블에서 해당 상품에 대한 게시물 개수를 count(*) 함수를 통해 가져온다. -->
     <select id="totalCount" resultType="com.handsome.domain.BoardBean" parameterType="java.lang.String">
     	select count(*) as cnt from tbl_review where pid = #{pid}
     </select>
