@@ -35,5 +35,21 @@ Tech Stack
         </span>
       </td>
     </tr>
+    <tr>
+      <td>DB</td>
+      <td>
+        <span>
+          <img src = "https://img.shields.io/badge/Oracle-F80000?style=for-the-badge&logo=oracle&logoColor=white" />
+        </span>
+      </td>
+    </tr>
+    <tr>
+      <td>Server</td>
+      <td>
+        <span>
+          <img src = "https://img.shields.io/badge/apache%20tomcat-%23F8DC75.svg?style=for-the-badge&logo=apache-tomcat&logoColor=black" />
+        </span>
+      </td>
+    </tr>
   </tbody>
 </table>
