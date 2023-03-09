@@ -13,8 +13,8 @@ Tech Stack
 <table>
   <tbody>
     <tr>
-      <td>Programming Language</td>
-      <td>
+      <td style="background-color : #D8D8D8">Programming Language</td>
+      <td style="background-color : #FFFFFF">
         <span>
           <img src = "https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=java&logoColor=white" />
           <img src = "https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white" />
@@ -26,8 +26,8 @@ Tech Stack
       </td>
     </tr>
     <tr>
-      <td>IDE</td>
-      <td>
+      <td style="background-color : #D8D8D8">IDE</td>
+      <td style="background-color : #FFFFFF">
         <span>
           <img src = "https://img.shields.io/badge/Eclipse-FE7A16.svg?style=for-the-badge&logo=Eclipse&logoColor=white" />
           <img src = "https://img.shields.io/badge/Visual%20Studio%20Code-0078d7.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white" />
@@ -36,16 +36,16 @@ Tech Stack
       </td>
     </tr>
     <tr>
-      <td>DB</td>
-      <td>
+      <td style="background-color : #D8D8D8">DB</td>
+      <td style="background-color : #FFFFFF">
         <span>
           <img src = "https://img.shields.io/badge/Oracle-F80000?style=for-the-badge&logo=oracle&logoColor=white" />
         </span>
       </td>
     </tr>
     <tr>
-      <td>Server</td>
-      <td>
+      <td style="background-color : #D8D8D8">Server</td>
+      <td style="background-color : #FFFFFF">
         <span>
           <img src = "https://img.shields.io/badge/apache%20tomcat-%23F8DC75.svg?style=for-the-badge&logo=apache-tomcat&logoColor=black" />
         </span>
