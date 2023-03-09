@@ -1,6 +1,7 @@
 더한섬닷컴 홈페이지 클론 코딩
 ======================
 <img src="https://img.shields.io/badge/spring-%236DB33F.svg?style=for-the-badge&logo=spring&logoColor=white"/>
+<img src="https://img.shields.io/badge/Oracle-F80000?style=for-the-badge&logo=oracle&logoColor=white"/>
 
 [프로젝트 발표 자료](https://github.com/yoolim12/HyundaiMiniProject/files/10931129/Spring.Mini.Project.PPT.pptx)
 <br />
