@@ -31,7 +31,7 @@ Tech Stack
         <span>
           <img src = "https://img.shields.io/badge/Eclipse-FE7A16.svg?style=for-the-badge&logo=Eclipse&logoColor=white" />
           <img src = "https://img.shields.io/badge/Visual%20Studio%20Code-0078d7.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white" />
-          <img src="https://img.shields.io/badge/SQLDeveloper-FFCA28?style=flat-square&logo=sqldeveloper&logoColor=white"/>
+          <img src = "https://img.shields.io/badge/SQLDeveloper-01A9DB?style=flat-square&logo=sqldeveloper&logoColor=white"/>
         </span>
       </td>
     </tr>
