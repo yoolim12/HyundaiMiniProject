@@ -7,4 +7,18 @@
 <br />
 
 현대 IT&E 채용확정형 교육을 들으면서 미니프로젝트로 더한섬닷컴 홈페이지를 클론코딩 해보았습니다.
-구현한 기능은 크게 상품 목록, 상품 상세, 
+구현한 기능은 크게 상품 목록, 상품 상세,
+
+Tech Stack
+<table>
+  <tbody>
+    <tr>
+      <td>Language</td>
+      <td>hdjnjd</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>nj</td>
+    </tr>
+  </tbody>
+</table>
