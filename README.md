@@ -1,8 +1,9 @@
 # **더한섬닷컴 홈페이지 클론 코딩**
 
 👇 프로젝트 발표 자료 참고 👇<br />
-> [프로젝트 발표 자료](https://github.com/yoolim12/HyundaiMiniProject/files/10931129/Spring.Mini.Project.PPT.pptx)
+> [프로젝트 발표 자료](https://github.com/yoolim12/HyundaiMiniProject/files/10940636/Spring.Mini.Project.PPT.pptx)
 <br />
+
 
 ## **About Project**
 현대 IT&E 채용확정형 교육을 들으면서 일주일동안 진행한 Spring Web MVC Framework을 활용한 더한섬닷컴 홈페이지 제작 프로젝트 입니다.<br />
