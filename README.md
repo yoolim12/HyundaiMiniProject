@@ -10,6 +10,43 @@ DB 내에 회원 테이블, 상품 테이블, 주문 테이블을 생성한 뒤 
 <br />
 <br />
 
+## **Our Team Members**
+<table>
+  <tbody>
+    <tr>
+      <td>유지훈</td>
+      <td>
+        <ul>
+          <li>로그인 및 로그아웃</li>
+          <li>회원가입</li>
+          <li>마이페이지</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td>이지은</td>
+      <td>
+        <ul>
+          <li>상품 목록</li>
+          <li>상품 상세</li>
+          <li>1:1 상담</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td>최유림</td>
+      <td>
+        <ul>
+          <li>쇼핑백 조회 및 삭제</li>
+          <li>상품 Q&A</li>
+        </ul>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<br />
+<br />
+
 ## **Tech Stack**
 <table>
   <tbody>
