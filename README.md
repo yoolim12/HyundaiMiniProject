@@ -1,7 +1,7 @@
 # **더한섬닷컴 홈페이지 클론 코딩**
 
-> 👇 프로젝트 발표 자료 참고 👇<br />
-[프로젝트 발표 자료](https://github.com/yoolim12/HyundaiMiniProject/files/10931129/Spring.Mini.Project.PPT.pptx)
+👇 프로젝트 발표 자료 참고 👇<br />
+> [프로젝트 발표 자료](https://github.com/yoolim12/HyundaiMiniProject/files/10931129/Spring.Mini.Project.PPT.pptx)
 <br />
 <br />
 
