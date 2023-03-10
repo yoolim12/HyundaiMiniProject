@@ -65,7 +65,7 @@ DB 내에 회원 테이블, 상품 테이블, 주문 테이블을 생성한 뒤 
 > <img width="80%" alt="image" src="https://user-images.githubusercontent.com/78739536/224242250-af1d88d1-2ceb-4512-b471-1d81539fcf55.png"><br><br>
 > - 회원 정보 조회(마이페이지) / 수정<br><br>
 > <img width="80%" alt="image" src="https://user-images.githubusercontent.com/78739536/224243795-a2d28c9c-d73e-473d-8bfc-757d74f064e8.png">
-<img width="80%" alt="image" src="https://user-images.githubusercontent.com/78739536/224244072-f1006fa0-895f-43b7-ab6f-4209a4f3453b.png"><br><br>
+> <img width="80%" alt="image" src="https://user-images.githubusercontent.com/78739536/224244072-f1006fa0-895f-43b7-ab6f-4209a4f3453b.png"><br><br>
 > - 1:1 문의 조회 / 작성 / 삭제<br><br>
 
 2. 상품
