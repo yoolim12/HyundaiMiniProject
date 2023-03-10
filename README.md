@@ -111,8 +111,8 @@ DB 내에 회원 테이블, 상품 테이블, 주문 테이블을 생성한 뒤 
 > - 1:1 문의 조회 / 작성 / 삭제<br>
 
 3. 주문
-> - 쇼핑백 조회 / 상품 추가 / 상품 삭제
-> - 쇼핑백 내 상품 개수 출력 / 총 상품 합계 출력
-> ![ezgif com-video-to-gif (1)](https://user-images.githubusercontent.com/78739536/224282022-da16ed8a-1bf5-486d-8aa8-310fd3181be5.gif)
+> - 쇼핑백 조회 / 상품 추가 / 상품 삭제<br>
+> - 쇼핑백 내 상품 개수 출력 / 총 상품 합계 출력<br>
+> ![ezgif com-video-to-gif (1)](https://user-images.githubusercontent.com/78739536/224282022-da16ed8a-1bf5-486d-8aa8-310fd3181be5.gif)<br>
 
 
