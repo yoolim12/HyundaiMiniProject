@@ -63,8 +63,8 @@ DB 내에 회원 테이블, 상품 테이블, 주문 테이블을 생성한 뒤 
 > - 회원가입
 > - 회원 정보 조회(마이페이지) / 수정
 > - 1:1 문의 조회 / 작성 / 삭제<br>
-> <span><img width="40%" alt="image" src="https://user-images.githubusercontent.com/78739536/224241340-4848a58c-4636-4c40-9af9-ddfe2ee48ff3.png">
-<img width="40%" alt="image" src="https://user-images.githubusercontent.com/78739536/224242250-af1d88d1-2ceb-4512-b471-1d81539fcf55.png"></span>
+> <span><img width="400px" alt="image" src="https://user-images.githubusercontent.com/78739536/224241340-4848a58c-4636-4c40-9af9-ddfe2ee48ff3.png">
+<img width="400px" alt="image" src="https://user-images.githubusercontent.com/78739536/224242250-af1d88d1-2ceb-4512-b471-1d81539fcf55.png"></span>
 
 2. 상품
 > - 상품 목록 조회 / 페이징
