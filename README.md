@@ -70,7 +70,7 @@ DB 내에 회원 테이블, 상품 테이블, 주문 테이블을 생성한 뒤 
 2. 상품
 > - 상품 목록 조회 / 페이징
 > - 상품 목록 카테고리 분류 / 카테고리 별 상품 수 출력
-> ![image](https://user-images.githubusercontent.com/78739536/224247929-43fb9a60-3dce-4cdb-8867-c0650734ab21.png)
+> ![ezgif com-video-to-gif](https://user-images.githubusercontent.com/78739536/224248156-042fd57f-2e57-43c7-8839-fb4a81bf121f.gif)
 > - 상품 상세 정보 조회
 > - 1:1 문의 조회 / 작성 / 삭제
 
