@@ -107,7 +107,7 @@ DB 내에 회원 테이블, 상품 테이블, 주문 테이블을 생성한 뒤 
 > - 상품 목록 조회 / 페이징<br>
 > - 상품 목록 카테고리 분류 / 카테고리 별 상품 수 출력<br>
 > ![ProductList](https://user-images.githubusercontent.com/78739536/224251456-aeea7ad0-243e-4d78-af6b-776bdb9faa2f.gif)<br>
-> - 상품 상세 정보 조회<br>
+> - 상품 상세 정보 조회("3. 주문" 하단에 있는 영상 참고)<br>
 > - 상품 별 Q&A 조회 / Q&A 개수 출력<br>
 ![ezgif com-video-to-gif (2)](https://user-images.githubusercontent.com/78739536/224293731-898d8713-3879-49fc-b675-93d6050b1c75.gif)<br>
 
