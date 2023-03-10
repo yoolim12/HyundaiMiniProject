@@ -59,20 +59,17 @@ DB 내에 회원 테이블, 상품 테이블, 주문 테이블을 생성한 뒤 
 
 ## **UI**
 1. 회원
-> - 로그인 / 로그아웃<br><br>
-> <img width="80%" alt="image" src="https://user-images.githubusercontent.com/78739536/224241340-4848a58c-4636-4c40-9af9-ddfe2ee48ff3.png"><br><br>
-> - 회원가입<br><br>
-> <img width="80%" alt="image" src="https://user-images.githubusercontent.com/78739536/224242250-af1d88d1-2ceb-4512-b471-1d81539fcf55.png"><br><br>
-> - 회원 정보 조회(마이페이지) / 수정<br><br>
-> <img width="80%" alt="image" src="https://user-images.githubusercontent.com/78739536/224243795-a2d28c9c-d73e-473d-8bfc-757d74f064e8.png"><br><br>
-> - 1:1 문의 조회 / 작성 / 삭제<br><br>
+> - 로그인 / 로그아웃
+> - 회원가입
+> - 회원 정보 조회(마이페이지) / 수정
+> - 1:1 문의 조회 / 작성 / 삭제
 
 2. 상품
-> - 상품 목록 조회 / 페이징
-> - 상품 목록 카테고리 분류 / 카테고리 별 상품 수 출력
-> ![ezgif com-video-to-gif](https://user-images.githubusercontent.com/78739536/224248156-042fd57f-2e57-43c7-8839-fb4a81bf121f.gif)
-> - 상품 상세 정보 조회
-> - 1:1 문의 조회 / 작성 / 삭제
+> - 상품 목록 조회 / 페이징<br>
+> - 상품 목록 카테고리 분류 / 카테고리 별 상품 수 출력<br>
+> ![ProductList](https://user-images.githubusercontent.com/78739536/224251456-aeea7ad0-243e-4d78-af6b-776bdb9faa2f.gif)<br>
+> - 상품 상세 정보 조회<br>
+> - 1:1 문의 조회 / 작성 / 삭제<br>
 
 3. 주문
 > - 쇼핑백 조회 / 상품 추가 / 상품 삭제
