@@ -1,12 +1,18 @@
-더한섬닷컴 홈페이지 클론 코딩
-======================
+# **더한섬닷컴 홈페이지 클론 코딩**
+
 [프로젝트 발표 자료](https://github.com/yoolim12/HyundaiMiniProject/files/10931129/Spring.Mini.Project.PPT.pptx)
 <br />
+<br />
 
-현대 IT&E 채용확정형 교육을 들으면서 미니프로젝트로 더한섬닷컴 홈페이지를 클론코딩 해보았습니다.
-구현한 기능은 크게 상품 목록, 상품 상세,
+## **About Project**
+--------------------
+현대 IT&E 채용확정형 교육을 들으면서 일주일동안 진행한 Spring Web MVC Framework을 활용한 더한섬닷컴 홈페이지 제작 프로젝트 입니다.<br />
+DB 내에 회원 테이블, 상품 테이블, 주문 테이블을 생성한 뒤 Spring Framework와 Oracle DB를 연동하여 회원, 상품, 주문 관련 기능들을 직접 구현했습니다.<br />
+<br />
 
-Tech Stack
+
+### **Tech Stack**
+------------------
 <table>
   <tbody>
     <tr>
