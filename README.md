@@ -95,6 +95,18 @@ DB 내에 회원 테이블, 상품 테이블, 주문 테이블을 생성한 뒤 
 <br />
 <br />
 
+## **ERD**
+### 회원
+<img width="80%" alt="image" src="https://user-images.githubusercontent.com/78739536/224468016-df91abfa-3d42-4939-935a-3e1969f2fa2e.png"><br>
+
+### 상품
+<img width="80%" alt="image" src="https://user-images.githubusercontent.com/78739536/224468068-9b1ffb3c-4243-491f-a39b-922cce268f01.png"><br>
+
+### 주문
+<img width="80%" alt="image" src="https://user-images.githubusercontent.com/78739536/224468100-767703fd-d4d6-42bb-a101-ff0e23d24748.png"><br>
+<br>
+<br>
+
 ## **UI & Presentation Video**
 ※ 시연 영상을 GIF로 변환하였더니 다소 영상 화질이 깨지는 점 양해 바랍니다. UI 화면은 발표 자료에서도 참고하실 수 있습니다! ※
 1. 회원
@@ -115,7 +127,10 @@ DB 내에 회원 테이블, 상품 테이블, 주문 테이블을 생성한 뒤 
 > - 쇼핑백 조회 / 상품 추가 / 상품 삭제<br>
 > - 쇼핑백 내 상품 개수 출력 / 총 상품 합계 출력<br>
 > ![ezgif com-video-to-gif (1)](https://user-images.githubusercontent.com/78739536/224282022-da16ed8a-1bf5-486d-8aa8-310fd3181be5.gif)<br>
+<br>
+<br>
 
+## **Project Structure**
 ```bash
 .
 ├── java
@@ -184,6 +199,6 @@ DB 내에 회원 테이블, 상품 테이블, 주문 테이블을 생성한 뒤 
     │   │   ├── root-context.xml
     │   │   └── security-context.xml
     │   ├── views
-    
+
  (이하 생략)
 ```
