@@ -116,6 +116,8 @@ DB 내에 회원 테이블, 상품 테이블, 주문 테이블을 생성한 뒤 
 > - 회원 정보 조회(마이페이지) / 수정<br>
 > ![ezgif com-video-to-gif (4)](https://user-images.githubusercontent.com/78739536/224469188-b29af3a9-1985-4825-b3a1-70597a711a5e.gif)<br>
 > - 1:1 문의 조회 / 작성 / 삭제<br>
+> ![ezgif com-video-to-gif (5)](https://user-images.githubusercontent.com/78739536/224474926-50774017-36f3-4677-8493-ce8770d1f122.gif)<br>
+
 
 2. 상품
 > - 상품 목록 조회 / 페이징<br>
