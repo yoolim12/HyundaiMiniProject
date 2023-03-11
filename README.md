@@ -116,7 +116,7 @@ DB 내에 회원 테이블, 상품 테이블, 주문 테이블을 생성한 뒤 
 > - 쇼핑백 내 상품 개수 출력 / 총 상품 합계 출력<br>
 > ![ezgif com-video-to-gif (1)](https://user-images.githubusercontent.com/78739536/224282022-da16ed8a-1bf5-486d-8aa8-310fd3181be5.gif)<br>
 
-
+```bash
 .
 ├── java
 │   └── com
@@ -542,3 +542,4 @@ DB 내에 회원 테이블, 상품 테이블, 주문 테이블을 생성한 뒤 
             └── raphael
                 ├── raphael.js
                 └── raphael.min.js
+```
