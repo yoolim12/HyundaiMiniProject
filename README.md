@@ -114,6 +114,7 @@ DB 내에 회원 테이블, 상품 테이블, 주문 테이블을 생성한 뒤 
 > - 회원가입<br>
 > ![ezgif com-video-to-gif (3)](https://user-images.githubusercontent.com/78739536/224468538-29fce8f5-b665-41f8-947d-3fea538d1237.gif)<br>
 > - 회원 정보 조회(마이페이지) / 수정<br>
+> ![ezgif com-video-to-gif (4)](https://user-images.githubusercontent.com/78739536/224469188-b29af3a9-1985-4825-b3a1-70597a711a5e.gif)<br>
 > - 1:1 문의 조회 / 작성 / 삭제<br>
 
 2. 상품
