@@ -97,13 +97,13 @@ DB 내에 회원 테이블, 상품 테이블, 주문 테이블을 생성한 뒤 
 
 ## **ERD**
 ### 회원
-<img width="80%" alt="image" src="https://user-images.githubusercontent.com/78739536/224468016-df91abfa-3d42-4939-935a-3e1969f2fa2e.png"><br>
+<img width="40%" alt="image" src="https://user-images.githubusercontent.com/78739536/224468016-df91abfa-3d42-4939-935a-3e1969f2fa2e.png"><br>
 
 ### 상품
-<img width="80%" alt="image" src="https://user-images.githubusercontent.com/78739536/224468068-9b1ffb3c-4243-491f-a39b-922cce268f01.png"><br>
+<img width="40%" alt="image" src="https://user-images.githubusercontent.com/78739536/224468068-9b1ffb3c-4243-491f-a39b-922cce268f01.png"><br>
 
 ### 주문
-<img width="80%" alt="image" src="https://user-images.githubusercontent.com/78739536/224468100-767703fd-d4d6-42bb-a101-ff0e23d24748.png"><br>
+<img width="40%" alt="image" src="https://user-images.githubusercontent.com/78739536/224468100-767703fd-d4d6-42bb-a101-ff0e23d24748.png"><br>
 <br>
 <br>
 
