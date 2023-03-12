@@ -70,7 +70,7 @@ DB 내에 회원 테이블, 상품 테이블, 주문 테이블을 생성한 뒤 
         <span>
           <img src = "https://img.shields.io/badge/Eclipse-FE7A16.svg?style=for-the-badge&logo=Eclipse&logoColor=white" />
           <img src = "https://img.shields.io/badge/Visual%20Studio%20Code-0078d7.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white" />
-          <img src = "https://img.shields.io/badge/SQLDeveloper-01A9DB?style=flat-square&logo=sqldeveloper&logoColor=white" width = "190.5px" height = "28px" />
+          <img src = "https://img.shields.io/badge/SQLDeveloper-01A9DB?style=flat-square&logo=Amazon%20DynamoDB&logoColor=white" width = "190.5px" height = "28px" />
         </span>
       </td>
     </tr>
